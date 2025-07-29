@@ -6,6 +6,8 @@ const connectDB = async () => {
       process.env.MONGODB_URI || "mongodb://localhost:27017/bindisa-agritech";
 
     const conn = await mongoose.connect(mongoURI, {
+      
+                                        
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
